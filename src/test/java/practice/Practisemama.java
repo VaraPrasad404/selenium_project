@@ -99,7 +99,7 @@ public class Practisemama {
 	
 	js.executeAsyncScript("arguments[0].click();", clickbtn);*/
 	
-	driver.findElement(By.id("autocomplete")).sendKeys("ind");
+	driver.findElement(By.id("autocomplete")).sendKeys("india");
 	
 	List<WebElement> list_ofcountries = driver.findElements(By.cssSelector(".ui-menu-item"));
 	
