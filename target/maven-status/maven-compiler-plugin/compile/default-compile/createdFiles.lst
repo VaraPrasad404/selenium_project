@@ -1,3 +1,9 @@
-Pages/AmazonHomePageObjects.class
 utils/ConfigReader.class
-Hooks/OpenBrowser.class
+utils/ScreenshotUtil.class
+reusablecomponents/waitutils.class
+utils/OpenBrowser.class
+utils/ExtentReportManager.class
+utils/Product.class
+utils/ExcelWriter.class
+reusablecomponents/SelectForDropdown.class
+reusablecomponents/hoverover.class

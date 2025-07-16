@@ -1,3 +1,9 @@
-/Users/vara/eclipse-workspace/CucumberProject/src/main/java/Hooks/OpenBrowser.java
-/Users/vara/eclipse-workspace/CucumberProject/src/main/java/Pages/AmazonHomePageObjects.java
+/Users/vara/eclipse-workspace/CucumberProject/src/main/java/reusablecomponents/SelectForDropdown.java
+/Users/vara/eclipse-workspace/CucumberProject/src/main/java/reusablecomponents/hoverover.java
+/Users/vara/eclipse-workspace/CucumberProject/src/main/java/reusablecomponents/waitutils.java
 /Users/vara/eclipse-workspace/CucumberProject/src/main/java/utils/ConfigReader.java
+/Users/vara/eclipse-workspace/CucumberProject/src/main/java/utils/ExcelWriter.java
+/Users/vara/eclipse-workspace/CucumberProject/src/main/java/utils/ExtentReportManager.java
+/Users/vara/eclipse-workspace/CucumberProject/src/main/java/utils/OpenBrowser.java
+/Users/vara/eclipse-workspace/CucumberProject/src/main/java/utils/Product.java
+/Users/vara/eclipse-workspace/CucumberProject/src/main/java/utils/ScreenshotUtil.java
