@@ -1,7 +1,0 @@
-<suite name="Cucumber Suite" parallel="tests" thread-count="5">
-    <test name="Parallel Feature Execution">
-        <classes>
-            <class name="runners.TestNGTestRunner" />
-        </classes>
-    </test>
-</suite>

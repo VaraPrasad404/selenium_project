@@ -27,19 +27,7 @@
     <version>7.8.0</version>
     <scope>test</scope>
 </dependency>
-    <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>${junit.jupiter.version}</version>
-        <scope>test</scope>
-    </dependency>
-
-    <!-- JUnit Platform Launcher (required for running from IDE/build tool) -->
-    <dependency>
-        <groupId>org.junit.platform</groupId>
-        <artifactId>junit-platform-launcher</artifactId>
-        <version>1.9.3</version> <!-- match with JUnit version -->
-    </dependency>
+  
         <!-- Cucumber 7 -->
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -52,12 +40,7 @@
             <version>7.14.0</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.junit.vintage</groupId>
-            <artifactId>junit-vintage-engine</artifactId>
-            <version>5.9.3</version>
-            <scope>test</scope>
-        </dependency>
+       
 
         <!-- Selenium -->
         <dependency>

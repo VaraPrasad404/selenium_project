@@ -8,7 +8,6 @@ import utils.ExtentReportManager;
 
 @CucumberOptions(
     features = "src/test/java/automationExercise",
-    tags = "@tag1",
     glue = {"automationExercisesStepDefinitions","Hooks"},
     			    plugin = {
     			        "pretty",

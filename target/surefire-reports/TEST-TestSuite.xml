@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="11.864" tests="6" errors="0" skipped="0" failures="6">
+  <properties>
+    <property name="surefire.suiteXmlFiles" value="testng.xml"/>
+    <property name="java.specification.version" value="23"/>
+    <property name="webdriver.chrome.driver" value="/Users/vara/.cache/selenium/chromedriver/mac-arm64/138.0.7204.157/chromedriver"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/vara/eclipse-workspace/CucumberProject/target/test-classes:/Users/vara/eclipse-workspace/CucumberProject/target/classes:/Users/vara/.m2/repository/io/cucumber/cucumber-testng/7.15.0/cucumber-testng-7.15.0.jar:/Users/vara/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/vara/.m2/repository/io/cucumber/cucumber-core/7.15.0/cucumber-core-7.15.0.jar:/Users/vara/.m2/repository/io/cucumber/cucumber-gherkin/7.15.0/cucumber-gherkin-7.15.0.jar:/Users/vara/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.15.0/cucumber-gherkin-messages-7.15.0.jar:/Users/vara/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/vara/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/Users/vara/.m2/repository/io/cucumber/tag-expressions/6.0.0/tag-expressions-6.0.0.jar:/Users/vara/.m2/repository/io/cucumber/cucumber-expressions/17.0.1/cucumber-expressions-17.0.1.jar:/Users/vara/.m2/repository/io/cucumber/datatable/7.15.0/datatable-7.15.0.jar:/Users/vara/.m2/repository/io/cucumber/cucumber-plugin/7.15.0/cucumber-plugin-7.15.0.jar:/Users/vara/.m2/repository/io/cucumber/docstring/7.15.0/docstring-7.15.0.jar:/Users/vara/.m2/repository/io/cucumber/html-formatter/20.4.0/html-formatter-20.4.0.jar:/Users/vara/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/Users/vara/.m2/repository/io/cucumber/ci-environment/10.0.0/ci-environment-10.0.0.jar:/Users/vara/.m2/repository/org/testng/testng/7.8.0/testng-7.8.0.jar:/Users/vara/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/vara/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/vara/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/vara/.m2/repository/io/cucumber/cucumber-java/7.14.0/cucumber-java-7.14.0.jar:/Users/vara/.m2/repository/io/cucumber/cucumber-junit/7.14.0/cucumber-junit-7.14.0.jar:/Users/vara/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/vara/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-java/4.15.0/selenium-java-4.15.0.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-api/4.15.0/selenium-api-4.15.0.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.15.0/selenium-chrome-driver-4.15.0.jar:/Users/vara/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.15.0/selenium-chromium-driver-4.15.0.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-json/4.15.0/selenium-json-4.15.0.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.15.0/selenium-manager-4.15.0.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v117/4.15.0/selenium-devtools-v117-4.15.0.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v118/4.15.0/selenium-devtools-v118-4.15.0.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v119/4.15.0/selenium-devtools-v119-4.15.0.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.15.0/selenium-devtools-v85-4.15.0.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.15.0/selenium-edge-driver-4.15.0.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.15.0/selenium-firefox-driver-4.15.0.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-http/4.15.0/selenium-http-4.15.0.jar:/Users/vara/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.15.0/selenium-ie-driver-4.15.0.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.15.0/selenium-remote-driver-4.15.0.jar:/Users/vara/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/Users/vara/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/vara/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/vara/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/vara/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/vara/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/Users/vara/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/vara/.m2/repository/io/opentelemetry/opentelemetry-api/1.28.0/opentelemetry-api-1.28.0.jar:/Users/vara/.m2/repository/io/opentelemetry/opentelemetry-context/1.28.0/opentelemetry-context-1.28.0.jar:/Users/vara/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.28.0/opentelemetry-exporter-logging-1.28.0.jar:/Users/vara/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.28.0/opentelemetry-sdk-metrics-1.28.0.jar:/Users/vara/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/opentelemetry-extension-incubator-1.28.0-alpha.jar:/Users/vara/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.28.0/opentelemetry-sdk-logs-1.28.0.jar:/Users/vara/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.28.0/opentelemetry-sdk-common-1.28.0.jar:/Users/vara/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.28.0/opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar:/Users/vara/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.28.0/opentelemetry-sdk-extension-autoconfigure-1.28.0.jar:/Users/vara/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.28.0-alpha/opentelemetry-api-events-1.28.0-alpha.jar:/Users/vara/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.28.0/opentelemetry-sdk-trace-1.28.0.jar:/Users/vara/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.28.0/opentelemetry-sdk-1.28.0.jar:/Users/vara/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/Users/vara/.m2/repository/net/bytebuddy/byte-buddy/1.14.5/byte-buddy-1.14.5.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-os/4.15.0/selenium-os-4.15.0.jar:/Users/vara/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.15.0/selenium-safari-driver-4.15.0.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-support/4.15.0/selenium-support-4.15.0.jar:/Users/vara/.m2/repository/io/github/bonigarcia/webdrivermanager/5.5.3/webdrivermanager-5.5.3.jar:/Users/vara/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/vara/.m2/repository/com/github/docker-java/docker-java/3.3.3/docker-java-3.3.3.jar:/Users/vara/.m2/repository/com/github/docker-java/docker-java-core/3.3.3/docker-java-core-3.3.3.jar:/Users/vara/.m2/repository/com/github/docker-java/docker-java-api/3.3.3/docker-java-api-3.3.3.jar:/Users/vara/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/vara/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/vara/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/vara/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.75/bcpkix-jdk18on-1.75.jar:/Users/vara/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.75/bcprov-jdk18on-1.75.jar:/Users/vara/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.75/bcutil-jdk18on-1.75.jar:/Users/vara/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/vara/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.3/docker-java-transport-httpclient5-3.3.3.jar:/Users/vara/.m2/repository/com/github/docker-java/docker-java-transport/3.3.3/docker-java-transport-3.3.3.jar:/Users/vara/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/Users/vara/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/vara/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/Users/vara/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/vara/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/vara/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/vara/.m2/repository/tech/grasshopper/extentreports-cucumber7-adapter/1.12.0/extentreports-cucumber7-adapter-1.12.0.jar:/Users/vara/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/Users/vara/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/vara/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/vara/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/vara/.m2/repository/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar:/Users/vara/.m2/repository/tech/grasshopper/extent-pdf-report/2.10.0/extent-pdf-report-2.10.0.jar:/Users/vara/.m2/repository/tech/grasshopper/cucumber-pdf-report/2.12.0/cucumber-pdf-report-2.12.0.jar:/Users/vara/.m2/repository/org/apache/pdfbox/pdfbox/2.0.26/pdfbox-2.0.26.jar:/Users/vara/.m2/repository/org/apache/pdfbox/fontbox/2.0.26/fontbox-2.0.26.jar:/Users/vara/.m2/repository/org/knowm/xchart/xchart/3.8.0/xchart-3.8.0.jar:/Users/vara/.m2/repository/de/erichseifert/vectorgraphics2d/VectorGraphics2D/0.13/VectorGraphics2D-0.13.jar:/Users/vara/.m2/repository/de/rototor/pdfbox/graphics2d/0.30/graphics2d-0.30.jar:/Users/vara/.m2/repository/com/madgag/animated-gif-lib/1.4/animated-gif-lib-1.4.jar:/Users/vara/.m2/repository/org/yaml/snakeyaml/1.28/snakeyaml-1.28.jar:/Users/vara/.m2/repository/tech/grasshopper/table-layout/1.5.1/table-layout-1.5.1.jar:/Users/vara/.m2/repository/tech/grasshopper/rest-assured-cucumber-pdf-report/1.4.1/rest-assured-cucumber-pdf-report-1.4.1.jar:/Users/vara/.m2/repository/org/jsoup/jsoup/1.15.3/jsoup-1.15.3.jar:/Users/vara/.m2/repository/com/aventstack/klov-reporter/5.0.9/klov-reporter-5.0.9.jar:/Users/vara/.m2/repository/org/mongodb/mongodb-driver/3.6.4/mongodb-driver-3.6.4.jar:/Users/vara/.m2/repository/org/mongodb/mongodb-driver-core/3.6.4/mongodb-driver-core-3.6.4.jar:/Users/vara/.m2/repository/org/mongodb/bson/3.6.4/bson-3.6.4.jar:/Users/vara/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/vara/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/vara/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/vara/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/vara/.m2/repository/tech/grasshopper/htmlextentreporter/1.0.1/htmlextentreporter-1.0.1.jar:/Users/vara/.m2/repository/tech/grasshopper/extent-excel-report/1.3.0/extent-excel-report-1.3.0.jar:/Users/vara/.m2/repository/com/google/protobuf/protobuf-java/3.21.12/protobuf-java-3.21.12.jar:/Users/vara/.m2/repository/org/apache/poi/poi-ooxml/5.2.3/poi-ooxml-5.2.3.jar:/Users/vara/.m2/repository/org/apache/poi/poi/5.2.3/poi-5.2.3.jar:/Users/vara/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/Users/vara/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/vara/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/vara/.m2/repository/org/apache/poi/poi-ooxml-lite/5.2.3/poi-ooxml-lite-5.2.3.jar:/Users/vara/.m2/repository/org/apache/xmlbeans/xmlbeans/5.1.1/xmlbeans-5.1.1.jar:/Users/vara/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/vara/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/vara/.m2/repository/com/github/virtuald/curvesapi/1.07/curvesapi-1.07.jar:/Users/vara/.m2/repository/org/apache/logging/log4j/log4j-api/2.18.0/log4j-api-2.18.0.jar:/Users/vara/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-23.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/vara/eclipse-workspace/CucumberProject/target/surefire/surefirebooter-20250716165308470_3.jar /Users/vara/eclipse-workspace/CucumberProject/target/surefire 2025-07-16T16-53-08_374-jvmRun1 surefire-20250716165308470_1tmp surefire_0-20250716165308470_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/vara/eclipse-workspace/CucumberProject/target/test-classes:/Users/vara/eclipse-workspace/CucumberProject/target/classes:/Users/vara/.m2/repository/io/cucumber/cucumber-testng/7.15.0/cucumber-testng-7.15.0.jar:/Users/vara/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/vara/.m2/repository/io/cucumber/cucumber-core/7.15.0/cucumber-core-7.15.0.jar:/Users/vara/.m2/repository/io/cucumber/cucumber-gherkin/7.15.0/cucumber-gherkin-7.15.0.jar:/Users/vara/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.15.0/cucumber-gherkin-messages-7.15.0.jar:/Users/vara/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/vara/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/Users/vara/.m2/repository/io/cucumber/tag-expressions/6.0.0/tag-expressions-6.0.0.jar:/Users/vara/.m2/repository/io/cucumber/cucumber-expressions/17.0.1/cucumber-expressions-17.0.1.jar:/Users/vara/.m2/repository/io/cucumber/datatable/7.15.0/datatable-7.15.0.jar:/Users/vara/.m2/repository/io/cucumber/cucumber-plugin/7.15.0/cucumber-plugin-7.15.0.jar:/Users/vara/.m2/repository/io/cucumber/docstring/7.15.0/docstring-7.15.0.jar:/Users/vara/.m2/repository/io/cucumber/html-formatter/20.4.0/html-formatter-20.4.0.jar:/Users/vara/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/Users/vara/.m2/repository/io/cucumber/ci-environment/10.0.0/ci-environment-10.0.0.jar:/Users/vara/.m2/repository/org/testng/testng/7.8.0/testng-7.8.0.jar:/Users/vara/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/vara/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/vara/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/vara/.m2/repository/io/cucumber/cucumber-java/7.14.0/cucumber-java-7.14.0.jar:/Users/vara/.m2/repository/io/cucumber/cucumber-junit/7.14.0/cucumber-junit-7.14.0.jar:/Users/vara/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/vara/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-java/4.15.0/selenium-java-4.15.0.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-api/4.15.0/selenium-api-4.15.0.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.15.0/selenium-chrome-driver-4.15.0.jar:/Users/vara/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.15.0/selenium-chromium-driver-4.15.0.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-json/4.15.0/selenium-json-4.15.0.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.15.0/selenium-manager-4.15.0.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v117/4.15.0/selenium-devtools-v117-4.15.0.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v118/4.15.0/selenium-devtools-v118-4.15.0.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v119/4.15.0/selenium-devtools-v119-4.15.0.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.15.0/selenium-devtools-v85-4.15.0.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.15.0/selenium-edge-driver-4.15.0.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.15.0/selenium-firefox-driver-4.15.0.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-http/4.15.0/selenium-http-4.15.0.jar:/Users/vara/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.15.0/selenium-ie-driver-4.15.0.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.15.0/selenium-remote-driver-4.15.0.jar:/Users/vara/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/Users/vara/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/vara/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/vara/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/vara/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/vara/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/Users/vara/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/vara/.m2/repository/io/opentelemetry/opentelemetry-api/1.28.0/opentelemetry-api-1.28.0.jar:/Users/vara/.m2/repository/io/opentelemetry/opentelemetry-context/1.28.0/opentelemetry-context-1.28.0.jar:/Users/vara/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.28.0/opentelemetry-exporter-logging-1.28.0.jar:/Users/vara/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.28.0/opentelemetry-sdk-metrics-1.28.0.jar:/Users/vara/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/opentelemetry-extension-incubator-1.28.0-alpha.jar:/Users/vara/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.28.0/opentelemetry-sdk-logs-1.28.0.jar:/Users/vara/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.28.0/opentelemetry-sdk-common-1.28.0.jar:/Users/vara/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.28.0/opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar:/Users/vara/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.28.0/opentelemetry-sdk-extension-autoconfigure-1.28.0.jar:/Users/vara/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.28.0-alpha/opentelemetry-api-events-1.28.0-alpha.jar:/Users/vara/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.28.0/opentelemetry-sdk-trace-1.28.0.jar:/Users/vara/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.28.0/opentelemetry-sdk-1.28.0.jar:/Users/vara/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/Users/vara/.m2/repository/net/bytebuddy/byte-buddy/1.14.5/byte-buddy-1.14.5.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-os/4.15.0/selenium-os-4.15.0.jar:/Users/vara/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.15.0/selenium-safari-driver-4.15.0.jar:/Users/vara/.m2/repository/org/seleniumhq/selenium/selenium-support/4.15.0/selenium-support-4.15.0.jar:/Users/vara/.m2/repository/io/github/bonigarcia/webdrivermanager/5.5.3/webdrivermanager-5.5.3.jar:/Users/vara/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/vara/.m2/repository/com/github/docker-java/docker-java/3.3.3/docker-java-3.3.3.jar:/Users/vara/.m2/repository/com/github/docker-java/docker-java-core/3.3.3/docker-java-core-3.3.3.jar:/Users/vara/.m2/repository/com/github/docker-java/docker-java-api/3.3.3/docker-java-api-3.3.3.jar:/Users/vara/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/vara/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/vara/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/vara/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.75/bcpkix-jdk18on-1.75.jar:/Users/vara/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.75/bcprov-jdk18on-1.75.jar:/Users/vara/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.75/bcutil-jdk18on-1.75.jar:/Users/vara/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/vara/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.3/docker-java-transport-httpclient5-3.3.3.jar:/Users/vara/.m2/repository/com/github/docker-java/docker-java-transport/3.3.3/docker-java-transport-3.3.3.jar:/Users/vara/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/Users/vara/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/vara/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/Users/vara/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/vara/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/vara/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/vara/.m2/repository/tech/grasshopper/extentreports-cucumber7-adapter/1.12.0/extentreports-cucumber7-adapter-1.12.0.jar:/Users/vara/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/Users/vara/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/Users/vara/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/vara/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/Users/vara/.m2/repository/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar:/Users/vara/.m2/repository/tech/grasshopper/extent-pdf-report/2.10.0/extent-pdf-report-2.10.0.jar:/Users/vara/.m2/repository/tech/grasshopper/cucumber-pdf-report/2.12.0/cucumber-pdf-report-2.12.0.jar:/Users/vara/.m2/repository/org/apache/pdfbox/pdfbox/2.0.26/pdfbox-2.0.26.jar:/Users/vara/.m2/repository/org/apache/pdfbox/fontbox/2.0.26/fontbox-2.0.26.jar:/Users/vara/.m2/repository/org/knowm/xchart/xchart/3.8.0/xchart-3.8.0.jar:/Users/vara/.m2/repository/de/erichseifert/vectorgraphics2d/VectorGraphics2D/0.13/VectorGraphics2D-0.13.jar:/Users/vara/.m2/repository/de/rototor/pdfbox/graphics2d/0.30/graphics2d-0.30.jar:/Users/vara/.m2/repository/com/madgag/animated-gif-lib/1.4/animated-gif-lib-1.4.jar:/Users/vara/.m2/repository/org/yaml/snakeyaml/1.28/snakeyaml-1.28.jar:/Users/vara/.m2/repository/tech/grasshopper/table-layout/1.5.1/table-layout-1.5.1.jar:/Users/vara/.m2/repository/tech/grasshopper/rest-assured-cucumber-pdf-report/1.4.1/rest-assured-cucumber-pdf-report-1.4.1.jar:/Users/vara/.m2/repository/org/jsoup/jsoup/1.15.3/jsoup-1.15.3.jar:/Users/vara/.m2/repository/com/aventstack/klov-reporter/5.0.9/klov-reporter-5.0.9.jar:/Users/vara/.m2/repository/org/mongodb/mongodb-driver/3.6.4/mongodb-driver-3.6.4.jar:/Users/vara/.m2/repository/org/mongodb/mongodb-driver-core/3.6.4/mongodb-driver-core-3.6.4.jar:/Users/vara/.m2/repository/org/mongodb/bson/3.6.4/bson-3.6.4.jar:/Users/vara/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/vara/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/vara/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/vara/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/vara/.m2/repository/tech/grasshopper/htmlextentreporter/1.0.1/htmlextentreporter-1.0.1.jar:/Users/vara/.m2/repository/tech/grasshopper/extent-excel-report/1.3.0/extent-excel-report-1.3.0.jar:/Users/vara/.m2/repository/com/google/protobuf/protobuf-java/3.21.12/protobuf-java-3.21.12.jar:/Users/vara/.m2/repository/org/apache/poi/poi-ooxml/5.2.3/poi-ooxml-5.2.3.jar:/Users/vara/.m2/repository/org/apache/poi/poi/5.2.3/poi-5.2.3.jar:/Users/vara/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/Users/vara/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/vara/.m2/repository/com/zaxxer/SparseBitSet/1.2/SparseBitSet-1.2.jar:/Users/vara/.m2/repository/org/apache/poi/poi-ooxml-lite/5.2.3/poi-ooxml-lite-5.2.3.jar:/Users/vara/.m2/repository/org/apache/xmlbeans/xmlbeans/5.1.1/xmlbeans-5.1.1.jar:/Users/vara/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/vara/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/vara/.m2/repository/com/github/virtuald/curvesapi/1.07/curvesapi-1.07.jar:/Users/vara/.m2/repository/org/apache/logging/log4j/log4j-api/2.18.0/log4j-api-2.18.0.jar:/Users/vara/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/vara"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-09-17"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-23.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/vara/eclipse-workspace/CucumberProject"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/vara/eclipse-workspace/CucumberProject/target/surefire/surefirebooter-20250716165308470_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="23+37-2369"/>
+    <property name="user.name" value="vara"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.5"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/vara/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/m_/k3b1gzss4m1dfhw__v6q4v5c0000gn/T/"/>
+    <property name="java.version" value="23"/>
+    <property name="user.dir" value="/Users/vara/eclipse-workspace/CucumberProject"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/vara/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="23+37-2369"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;Fill the contact us form in automation exercise website&quot;, &quot;Fill Contact Us form&quot;](1)" classname="runners.TestNGTestRunner" time="11.101">
+    <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=138.0.7204.102)&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;23&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5759b5f8bfbc2305cd891b7d42b010e7, findElement {using=xpath, value=//div[@id=&apos;slider-carousel&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.102, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: /var/folders/m_/k3b1gzss4m1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 138.0.7204.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5759b5f8bfbc2305cd891b7d42b010e7" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.102)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5759b5f8bfbc2305cd891b7d42b010e7, findElement {using=xpath, value=//div[@id='slider-carousel']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.102, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: /var/folders/m_/k3b1gzss4m1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 138.0.7204.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5759b5f8bfbc2305cd891b7d42b010e7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at Pages.HomePAge.home_page_displayed(HomePAge.java:132)
+	at automationExercisesStepDefinitions.RegisterUser.verify_that_home_page_is_visible_successfully(RegisterUser.java:23)
+	at ✽.Verify that home page is visible successfully(file:///Users/vara/eclipse-workspace/CucumberProject/src/test/java/automationExercise/ContactUsForm.feature:6)
+]]></failure>
+    <system-out><![CDATA[
+@tag1
+Scenario Outline: Fill the contact us form in automation exercise website                          &amp#27;[90m# src/test/java/automationExercise/ContactUsForm.feature:18&amp#27;[0m
+TestNG-tests-1 loading config...
+TestNG-tests-1 → browser = chrome
+TestNG-tests-1 → headless = false
+TestNG-tests-1 → mainurl = https://www.automationexercise.com/
+TestNG-tests-1 → browser: chrome, url: https://www.automationexercise.com/
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mLaunch the browser and access automation excercise site&amp#27;[0m                                    &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.launch_the_browser_and_access_automation_excercise_site()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mVerify that home page is visible successfully&amp#27;[0m                                               &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.verify_that_home_page_is_visible_successfully()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.102)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5759b5f8bfbc2305cd891b7d42b010e7, findElement {using=xpath, value=//div[@id='slider-carousel']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.102, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: /var/folders/m_/k3b1gzss4m1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 138.0.7204.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5759b5f8bfbc2305cd891b7d42b010e7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at Pages.HomePAge.home_page_displayed(HomePAge.java:132)
+	at automationExercisesStepDefinitions.RegisterUser.verify_that_home_page_is_visible_successfully(RegisterUser.java:23)
+	at ✽.Verify that home page is visible successfully(file:///Users/vara/eclipse-workspace/CucumberProject/src/test/java/automationExercise/ContactUsForm.feature:6)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mClick on &amp#27;[0m&amp#27;[36m&amp#27;[1m'Contact us'&amp#27;[0m&amp#27;[36m button&amp#27;[0m                                                                &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.click_on_button(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mVerify &amp#27;[0m&amp#27;[36m&amp#27;[1m'Get In Touch'&amp#27;[0m&amp#27;[36m is visible&amp#27;[0m                                                            &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.verify_is_visible(java.lang.String)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mEnter &amp#27;[0m&amp#27;[36m&amp#27;[1m"Love"&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"love23@you.com"&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"Feedback"&amp#27;[0m&amp#27;[36m and &amp#27;[0m&amp#27;[36m&amp#27;[1m"Sample love message"&amp#27;[0m                        &amp#27;[90m# automationExercisesStepDefinitions.ContactUsForm.submit_contactusform(java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUpload file&amp#27;[0m                                                                                  &amp#27;[90m# automationExercisesStepDefinitions.ContactUsForm.upload_file()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mClick Submit button&amp#27;[0m                                                                         &amp#27;[90m# automationExercisesStepDefinitions.ContactUsForm.submitfile()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mClick OK button&amp#27;[0m                                                                              &amp#27;[90m# automationExercisesStepDefinitions.ContactUsForm.clickokbtn()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mVerify success message &amp#27;[0m&amp#27;[36m&amp#27;[1m'Success! Your details have been submitted successfully.'&amp#27;[0m&amp#27;[36m is visible&amp#27;[0m &amp#27;[90m# automationExercisesStepDefinitions.ContactUsForm.verify_successmsg_visible(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mClick &amp#27;[0m&amp#27;[36m&amp#27;[1m'Home'&amp#27;[0m&amp#27;[36m button and verify that landed to home page successfully&amp#27;[0m                         &amp#27;[90m# automationExercisesStepDefinitions.ContactUsForm.click_home_btn(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.102)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5759b5f8bfbc2305cd891b7d42b010e7, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.102, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: /var/folders/m_/k3b1gzss4m1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 138.0.7204.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5759b5f8bfbc2305cd891b7d42b010e7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:330)
+	at utils.ScreenshotUtil.takeScreenshot(ScreenshotUtil.java:30)
+	at Hooks.TestHooks.tearDown(TestHooks.java:35)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Jul 16, 2025 4:53:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 16, 2025 4:53:15 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.102. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Get the total products count, Product name and Product Cost&quot;, &quot;Get all the Product Details&quot;](2)" classname="runners.TestNGTestRunner" time="0.014">
+    <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=138.0.7204.102)&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;23&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5759b5f8bfbc2305cd891b7d42b010e7, findElement {using=xpath, value=//div[@id=&apos;slider-carousel&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.102, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: /var/folders/m_/k3b1gzss4m1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 138.0.7204.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5759b5f8bfbc2305cd891b7d42b010e7" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.102)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5759b5f8bfbc2305cd891b7d42b010e7, findElement {using=xpath, value=//div[@id='slider-carousel']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.102, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: /var/folders/m_/k3b1gzss4m1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 138.0.7204.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5759b5f8bfbc2305cd891b7d42b010e7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at Pages.HomePAge.home_page_displayed(HomePAge.java:132)
+	at automationExercisesStepDefinitions.RegisterUser.verify_that_home_page_is_visible_successfully(RegisterUser.java:23)
+	at ✽.Verify that home page is visible successfully(file:///Users/vara/eclipse-workspace/CucumberProject/src/test/java/automationExercise/ProductDetails.feature:6)
+]]></failure>
+    <system-out><![CDATA[
+Scenario Outline: Get the total products count, Product name and Product Cost &amp#27;[90m# src/test/java/automationExercise/ProductDetails.feature:3&amp#27;[0m
+TestNG-tests-1 → browser = chrome
+TestNG-tests-1 → headless = false
+TestNG-tests-1 → mainurl = https://www.automationexercise.com/
+TestNG-tests-1 → browser: chrome, url: https://www.automationexercise.com/
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mLaunch the browser and access automation excercise site&amp#27;[0m               &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.launch_the_browser_and_access_automation_excercise_site()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mVerify that home page is visible successfully&amp#27;[0m                          &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.verify_that_home_page_is_visible_successfully()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.102)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5759b5f8bfbc2305cd891b7d42b010e7, findElement {using=xpath, value=//div[@id='slider-carousel']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.102, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: /var/folders/m_/k3b1gzss4m1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 138.0.7204.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5759b5f8bfbc2305cd891b7d42b010e7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at Pages.HomePAge.home_page_displayed(HomePAge.java:132)
+	at automationExercisesStepDefinitions.RegisterUser.verify_that_home_page_is_visible_successfully(RegisterUser.java:23)
+	at ✽.Verify that home page is visible successfully(file:///Users/vara/eclipse-workspace/CucumberProject/src/test/java/automationExercise/ProductDetails.feature:6)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mClick on &amp#27;[0m&amp#27;[36m&amp#27;[1m'Products'&amp#27;[0m&amp#27;[36m button&amp#27;[0m                                             &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.click_on_button(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mGet the products count&amp#27;[0m                                                  &amp#27;[90m# automationExercisesStepDefinitions.ProductspageStepdefinition.products_count()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mPrint each product name and cost&amp#27;[0m                                       &amp#27;[90m# automationExercisesStepDefinitions.ProductspageStepdefinition.productnames_cost()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mSort the products list as per cost in ascending order&amp#27;[0m                   &amp#27;[90m# automationExercisesStepDefinitions.ProductspageStepdefinition.sort_products_ascorder()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.102)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5759b5f8bfbc2305cd891b7d42b010e7, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.102, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: /var/folders/m_/k3b1gzss4m1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 138.0.7204.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5759b5f8bfbc2305cd891b7d42b010e7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:330)
+	at utils.ScreenshotUtil.takeScreenshot(ScreenshotUtil.java:30)
+	at Hooks.TestHooks.tearDown(TestHooks.java:35)
+&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Register the user for the first time to ecommerce application&quot;, &quot;Register User&quot;](3)" classname="runners.TestNGTestRunner" time="0.017">
+    <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=138.0.7204.102)&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;23&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5759b5f8bfbc2305cd891b7d42b010e7, findElement {using=xpath, value=//div[@id=&apos;slider-carousel&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.102, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: /var/folders/m_/k3b1gzss4m1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 138.0.7204.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5759b5f8bfbc2305cd891b7d42b010e7" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.102)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5759b5f8bfbc2305cd891b7d42b010e7, findElement {using=xpath, value=//div[@id='slider-carousel']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.102, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: /var/folders/m_/k3b1gzss4m1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 138.0.7204.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5759b5f8bfbc2305cd891b7d42b010e7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at Pages.HomePAge.home_page_displayed(HomePAge.java:132)
+	at automationExercisesStepDefinitions.RegisterUser.verify_that_home_page_is_visible_successfully(RegisterUser.java:23)
+	at ✽.Verify that home page is visible successfully(file:///Users/vara/eclipse-workspace/CucumberProject/src/test/java/automationExercise/RegisterUser.feature:8)
+]]></failure>
+    <system-out><![CDATA[
+Scenario Outline: Register the user for the first time to ecommerce application                                                                        &amp#27;[90m# src/test/java/automationExercise/RegisterUser.feature:27&amp#27;[0m
+TestNG-tests-1 → browser = chrome
+TestNG-tests-1 → headless = false
+TestNG-tests-1 → mainurl = https://www.automationexercise.com/
+TestNG-tests-1 → browser: chrome, url: https://www.automationexercise.com/
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mLaunch the browser and access automation excercise site&amp#27;[0m                                                                                        &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.launch_the_browser_and_access_automation_excercise_site()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mVerify that home page is visible successfully&amp#27;[0m                                                                                                   &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.verify_that_home_page_is_visible_successfully()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.102)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5759b5f8bfbc2305cd891b7d42b010e7, findElement {using=xpath, value=//div[@id='slider-carousel']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.102, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: /var/folders/m_/k3b1gzss4m1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 138.0.7204.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5759b5f8bfbc2305cd891b7d42b010e7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at Pages.HomePAge.home_page_displayed(HomePAge.java:132)
+	at automationExercisesStepDefinitions.RegisterUser.verify_that_home_page_is_visible_successfully(RegisterUser.java:23)
+	at ✽.Verify that home page is visible successfully(file:///Users/vara/eclipse-workspace/CucumberProject/src/test/java/automationExercise/RegisterUser.feature:8)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mClick on &amp#27;[0m&amp#27;[36m&amp#27;[1m'Signup / Login'&amp#27;[0m&amp#27;[36m button&amp#27;[0m                                                                                                                &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.click_on_button(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mVerify &amp#27;[0m&amp#27;[36m&amp#27;[1m'New User Signup!'&amp#27;[0m&amp#27;[36m is visible&amp#27;[0m                                                                                                            &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.verify_is_visible(java.lang.String)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mEnter &amp#27;[0m&amp#27;[36m&amp#27;[1m"Alice K"&amp#27;[0m&amp#27;[36m and &amp#27;[0m&amp#27;[36m&amp#27;[1m"alicek123@mail.com"&amp#27;[0m                                                                                                        &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.enter_username_email(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mClick &amp#27;[0m&amp#27;[36m&amp#27;[1m'Signup'&amp#27;[0m&amp#27;[36m button&amp#27;[0m                                                                                                                            &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.click_btn(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mVerify that the &amp#27;[0m&amp#27;[36m&amp#27;[1m'Enter Account Information'&amp#27;[0m&amp#27;[36m is visible&amp#27;[0m                                                                                          &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.verify_that_is_visible(java.lang.String)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mFill details: &amp#27;[0m&amp#27;[36m&amp#27;[1m"Mrs."&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"Alice K"&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"alicek123@mail.com"&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"A1!ice@23"&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"12-June-1997"&amp#27;[0m                                                              &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.fill_basic_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mSelect checkbox &amp#27;[0m&amp#27;[36m&amp#27;[1m'Sign up for our newsletter!'&amp#27;[0m                                                                                                    &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.select_newsletter_checkbox(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mSelect checkbox &amp#27;[0m&amp#27;[36m&amp#27;[1m'Receive special offers from our partners!'&amp#27;[0m                                                                                      &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.select_newsletter_checkbox(java.lang.String)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mFill details: &amp#27;[0m&amp#27;[36m&amp#27;[1m"Alice"&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"Kapoor"&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"GreenSoft Ltd"&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"221B Baker Street"&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"Apt 4B"&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"United States"&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"New York"&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"New York"&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"10001"&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"9876543210"&amp#27;[0m &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.fill_address_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mClick &amp#27;[0m&amp#27;[36m&amp#27;[1m'Create Account'&amp#27;[0m&amp#27;[36m button&amp#27;[0m                                                                                                                    &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.click_btn(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mVerify &amp#27;[0m&amp#27;[36m&amp#27;[1m'Account Created!'&amp#27;[0m&amp#27;[36m is visible&amp#27;[0m                                                                                                            &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.verify_is_visible(java.lang.String)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mClick on &amp#27;[0m&amp#27;[36m&amp#27;[1m'Continue'&amp#27;[0m&amp#27;[36m button&amp#27;[0m                                                                                                                      &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.click_on_button(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mVerify that 'Logged in as username' is visible&amp#27;[0m                                                                                                  &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.verify_logged_in_as_username_is_visible()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.102)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5759b5f8bfbc2305cd891b7d42b010e7, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.102, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: /var/folders/m_/k3b1gzss4m1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 138.0.7204.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5759b5f8bfbc2305cd891b7d42b010e7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:330)
+	at utils.ScreenshotUtil.takeScreenshot(ScreenshotUtil.java:30)
+	at Hooks.TestHooks.tearDown(TestHooks.java:35)
+&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Register the user for the first time to ecommerce application&quot;, &quot;Register User&quot;](4)" classname="runners.TestNGTestRunner" time="0.013">
+    <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=138.0.7204.102)&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;23&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5759b5f8bfbc2305cd891b7d42b010e7, findElement {using=xpath, value=//div[@id=&apos;slider-carousel&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.102, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: /var/folders/m_/k3b1gzss4m1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 138.0.7204.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5759b5f8bfbc2305cd891b7d42b010e7" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.102)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5759b5f8bfbc2305cd891b7d42b010e7, findElement {using=xpath, value=//div[@id='slider-carousel']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.102, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: /var/folders/m_/k3b1gzss4m1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 138.0.7204.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5759b5f8bfbc2305cd891b7d42b010e7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at Pages.HomePAge.home_page_displayed(HomePAge.java:132)
+	at automationExercisesStepDefinitions.RegisterUser.verify_that_home_page_is_visible_successfully(RegisterUser.java:23)
+	at ✽.Verify that home page is visible successfully(file:///Users/vara/eclipse-workspace/CucumberProject/src/test/java/automationExercise/RegisterUser.feature:8)
+]]></failure>
+    <system-out><![CDATA[
+Scenario Outline: Register the user for the first time to ecommerce application                                                             &amp#27;[90m# src/test/java/automationExercise/RegisterUser.feature:28&amp#27;[0m
+TestNG-tests-1 → browser = chrome
+TestNG-tests-1 → headless = false
+TestNG-tests-1 → mainurl = https://www.automationexercise.com/
+TestNG-tests-1 → browser: chrome, url: https://www.automationexercise.com/
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mLaunch the browser and access automation excercise site&amp#27;[0m                                                                             &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.launch_the_browser_and_access_automation_excercise_site()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mVerify that home page is visible successfully&amp#27;[0m                                                                                        &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.verify_that_home_page_is_visible_successfully()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.102)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5759b5f8bfbc2305cd891b7d42b010e7, findElement {using=xpath, value=//div[@id='slider-carousel']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.102, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: /var/folders/m_/k3b1gzss4m1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 138.0.7204.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5759b5f8bfbc2305cd891b7d42b010e7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at Pages.HomePAge.home_page_displayed(HomePAge.java:132)
+	at automationExercisesStepDefinitions.RegisterUser.verify_that_home_page_is_visible_successfully(RegisterUser.java:23)
+	at ✽.Verify that home page is visible successfully(file:///Users/vara/eclipse-workspace/CucumberProject/src/test/java/automationExercise/RegisterUser.feature:8)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mClick on &amp#27;[0m&amp#27;[36m&amp#27;[1m'Signup / Login'&amp#27;[0m&amp#27;[36m button&amp#27;[0m                                                                                                     &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.click_on_button(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mVerify &amp#27;[0m&amp#27;[36m&amp#27;[1m'New User Signup!'&amp#27;[0m&amp#27;[36m is visible&amp#27;[0m                                                                                                 &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.verify_is_visible(java.lang.String)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mEnter &amp#27;[0m&amp#27;[36m&amp#27;[1m"John D"&amp#27;[0m&amp#27;[36m and &amp#27;[0m&amp#27;[36m&amp#27;[1m"john.doe99@gmail.com"&amp#27;[0m                                                                                            &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.enter_username_email(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mClick &amp#27;[0m&amp#27;[36m&amp#27;[1m'Signup'&amp#27;[0m&amp#27;[36m button&amp#27;[0m                                                                                                                 &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.click_btn(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mVerify that the &amp#27;[0m&amp#27;[36m&amp#27;[1m'Enter Account Information'&amp#27;[0m&amp#27;[36m is visible&amp#27;[0m                                                                               &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.verify_that_is_visible(java.lang.String)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mFill details: &amp#27;[0m&amp#27;[36m&amp#27;[1m"Mr."&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"John D"&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"john.doe99@gmail.com"&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"Jd@Pass9"&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"9-September-1988"&amp#27;[0m                                                &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.fill_basic_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mSelect checkbox &amp#27;[0m&amp#27;[36m&amp#27;[1m'Sign up for our newsletter!'&amp#27;[0m                                                                                         &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.select_newsletter_checkbox(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mSelect checkbox &amp#27;[0m&amp#27;[36m&amp#27;[1m'Receive special offers from our partners!'&amp#27;[0m                                                                           &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.select_newsletter_checkbox(java.lang.String)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mFill details: &amp#27;[0m&amp#27;[36m&amp#27;[1m"John"&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"Doe"&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"FinCorp Inc"&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"14 Elmwood Drive"&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"Suite 210"&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"Canada"&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"Ontario"&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"Toronto"&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"M5V 3L9"&amp#27;[0m&amp#27;[36m, &amp#27;[0m&amp#27;[36m&amp#27;[1m"9123456789"&amp#27;[0m &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.fill_address_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mClick &amp#27;[0m&amp#27;[36m&amp#27;[1m'Create Account'&amp#27;[0m&amp#27;[36m button&amp#27;[0m                                                                                                         &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.click_btn(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mVerify &amp#27;[0m&amp#27;[36m&amp#27;[1m'Account Created!'&amp#27;[0m&amp#27;[36m is visible&amp#27;[0m                                                                                                 &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.verify_is_visible(java.lang.String)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mClick on &amp#27;[0m&amp#27;[36m&amp#27;[1m'Continue'&amp#27;[0m&amp#27;[36m button&amp#27;[0m                                                                                                           &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.click_on_button(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mVerify that 'Logged in as username' is visible&amp#27;[0m                                                                                       &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.verify_logged_in_as_username_is_visible()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.102)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5759b5f8bfbc2305cd891b7d42b010e7, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.102, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: /var/folders/m_/k3b1gzss4m1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 138.0.7204.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5759b5f8bfbc2305cd891b7d42b010e7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:330)
+	at utils.ScreenshotUtil.takeScreenshot(ScreenshotUtil.java:30)
+	at Hooks.TestHooks.tearDown(TestHooks.java:35)
+&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Login User with correct email and password&quot;, &quot;User Login to Automation Exercise Website&quot;](5)" classname="runners.TestNGTestRunner" time="0.041">
+    <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=138.0.7204.102)&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;23&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5759b5f8bfbc2305cd891b7d42b010e7, findElement {using=xpath, value=//div[@id=&apos;slider-carousel&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.102, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: /var/folders/m_/k3b1gzss4m1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 138.0.7204.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5759b5f8bfbc2305cd891b7d42b010e7" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.102)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5759b5f8bfbc2305cd891b7d42b010e7, findElement {using=xpath, value=//div[@id='slider-carousel']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.102, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: /var/folders/m_/k3b1gzss4m1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 138.0.7204.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5759b5f8bfbc2305cd891b7d42b010e7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at Pages.HomePAge.home_page_displayed(HomePAge.java:132)
+	at automationExercisesStepDefinitions.RegisterUser.verify_that_home_page_is_visible_successfully(RegisterUser.java:23)
+	at ✽.Verify that home page is visible successfully(file:///Users/vara/eclipse-workspace/CucumberProject/src/test/java/automationExercise/UserLogin.feature:8)
+]]></failure>
+    <system-out><![CDATA[
+Scenario Outline: Login User with correct email and password    &amp#27;[90m# src/test/java/automationExercise/UserLogin.feature:21&amp#27;[0m
+TestNG-tests-1 → browser = chrome
+TestNG-tests-1 → headless = false
+TestNG-tests-1 → mainurl = https://www.automationexercise.com/
+TestNG-tests-1 → browser: chrome, url: https://www.automationexercise.com/
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mLaunch the browser and access automation excercise site&amp#27;[0m &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.launch_the_browser_and_access_automation_excercise_site()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mVerify that home page is visible successfully&amp#27;[0m            &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.verify_that_home_page_is_visible_successfully()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.102)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5759b5f8bfbc2305cd891b7d42b010e7, findElement {using=xpath, value=//div[@id='slider-carousel']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.102, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: /var/folders/m_/k3b1gzss4m1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 138.0.7204.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5759b5f8bfbc2305cd891b7d42b010e7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at Pages.HomePAge.home_page_displayed(HomePAge.java:132)
+	at automationExercisesStepDefinitions.RegisterUser.verify_that_home_page_is_visible_successfully(RegisterUser.java:23)
+	at ✽.Verify that home page is visible successfully(file:///Users/vara/eclipse-workspace/CucumberProject/src/test/java/automationExercise/UserLogin.feature:8)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mClick on &amp#27;[0m&amp#27;[36m&amp#27;[1m'Signup / Login'&amp#27;[0m&amp#27;[36m button&amp#27;[0m                         &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.click_on_button(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mVerify &amp#27;[0m&amp#27;[36m&amp#27;[1m'Login to your account'&amp#27;[0m&amp#27;[36m is visible&amp#27;[0m                &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.verify_is_visible(java.lang.String)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mEnter correct &amp#27;[0m&amp#27;[36m&amp#27;[1m"alicek123@mail.com"&amp#27;[0m&amp#27;[36m and &amp#27;[0m&amp#27;[36m&amp#27;[1m"A1!ice@23"&amp#27;[0m       &amp#27;[90m# automationExercisesStepDefinitions.LoginUser.enter_email_password(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mClick &amp#27;[0m&amp#27;[36m&amp#27;[1m'Login'&amp#27;[0m&amp#27;[36m button&amp#27;[0m                                      &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.click_btn(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mVerify that 'Logged in as username' is visible&amp#27;[0m           &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.verify_logged_in_as_username_is_visible()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mClick &amp#27;[0m&amp#27;[36m&amp#27;[1m'Delete Account'&amp#27;[0m&amp#27;[36m button&amp#27;[0m                             &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.click_btn(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mVerify that the &amp#27;[0m&amp#27;[36m&amp#27;[1m'Account Deleted!'&amp#27;[0m&amp#27;[36m is visible&amp#27;[0m            &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.verify_that_is_visible(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.102)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5759b5f8bfbc2305cd891b7d42b010e7, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.102, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: /var/folders/m_/k3b1gzss4m1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 138.0.7204.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5759b5f8bfbc2305cd891b7d42b010e7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:330)
+	at utils.ScreenshotUtil.takeScreenshot(ScreenshotUtil.java:30)
+	at Hooks.TestHooks.tearDown(TestHooks.java:35)
+&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;User logsout from the automation exercise website&quot;, &quot;User Logout&quot;](6)" classname="runners.TestNGTestRunner" time="0.012">
+    <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=138.0.7204.102)&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.5&apos;, java.version: &apos;23&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [5759b5f8bfbc2305cd891b7d42b010e7, findElement {using=xpath, value=//div[@id=&apos;slider-carousel&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.102, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: /var/folders/m_/k3b1gzss4m1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 138.0.7204.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5759b5f8bfbc2305cd891b7d42b010e7" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.102)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5759b5f8bfbc2305cd891b7d42b010e7, findElement {using=xpath, value=//div[@id='slider-carousel']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.102, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: /var/folders/m_/k3b1gzss4m1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 138.0.7204.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5759b5f8bfbc2305cd891b7d42b010e7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at Pages.HomePAge.home_page_displayed(HomePAge.java:132)
+	at automationExercisesStepDefinitions.RegisterUser.verify_that_home_page_is_visible_successfully(RegisterUser.java:23)
+	at ✽.Verify that home page is visible successfully(file:///Users/vara/eclipse-workspace/CucumberProject/src/test/java/automationExercise/UserLogout.feature:6)
+]]></failure>
+    <system-out><![CDATA[
+Scenario Outline: User logsout from the automation exercise website &amp#27;[90m# src/test/java/automationExercise/UserLogout.feature:17&amp#27;[0m
+TestNG-tests-1 → browser = chrome
+TestNG-tests-1 → headless = false
+TestNG-tests-1 → mainurl = https://www.automationexercise.com/
+TestNG-tests-1 → browser: chrome, url: https://www.automationexercise.com/
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mLaunch the browser and access automation excercise site&amp#27;[0m     &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.launch_the_browser_and_access_automation_excercise_site()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mVerify that home page is visible successfully&amp#27;[0m                &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.verify_that_home_page_is_visible_successfully()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.102)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5759b5f8bfbc2305cd891b7d42b010e7, findElement {using=xpath, value=//div[@id='slider-carousel']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.102, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: /var/folders/m_/k3b1gzss4m1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 138.0.7204.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5759b5f8bfbc2305cd891b7d42b010e7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.isDisplayed(Unknown Source)
+	at Pages.HomePAge.home_page_displayed(HomePAge.java:132)
+	at automationExercisesStepDefinitions.RegisterUser.verify_that_home_page_is_visible_successfully(RegisterUser.java:23)
+	at ✽.Verify that home page is visible successfully(file:///Users/vara/eclipse-workspace/CucumberProject/src/test/java/automationExercise/UserLogout.feature:6)
+&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mClick on &amp#27;[0m&amp#27;[36m&amp#27;[1m'Signup / Login'&amp#27;[0m&amp#27;[36m button&amp#27;[0m                             &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.click_on_button(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mVerify &amp#27;[0m&amp#27;[36m&amp#27;[1m'Login to your account'&amp#27;[0m&amp#27;[36m is visible&amp#27;[0m                    &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.verify_is_visible(java.lang.String)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mEnter correct &amp#27;[0m&amp#27;[36m&amp#27;[1m"alicek123@mail.com"&amp#27;[0m&amp#27;[36m and &amp#27;[0m&amp#27;[36m&amp#27;[1m"A1!ice@23"&amp#27;[0m           &amp#27;[90m# automationExercisesStepDefinitions.LoginUser.enter_email_password(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mClick &amp#27;[0m&amp#27;[36m&amp#27;[1m'Login'&amp#27;[0m&amp#27;[36m button&amp#27;[0m                                          &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.click_btn(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mVerify that 'Logged in as username' is visible&amp#27;[0m               &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.verify_logged_in_as_username_is_visible()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mClick &amp#27;[0m&amp#27;[36m&amp#27;[1m'Logout'&amp#27;[0m&amp#27;[36m button&amp#27;[0m                                        &amp#27;[90m# automationExercisesStepDefinitions.RegisterUser.click_btn(java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mVerify that user is navigated to login page&amp#27;[0m                  &amp#27;[90m# automationExercisesStepDefinitions.SignoutUser.display_loginpage()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.102)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5759b5f8bfbc2305cd891b7d42b010e7, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.102, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: /var/folders/m_/k3b1gzss4m1...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 138.0.7204.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5759b5f8bfbc2305cd891b7d42b010e7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:330)
+	at utils.ScreenshotUtil.takeScreenshot(ScreenshotUtil.java:30)
+	at Hooks.TestHooks.tearDown(TestHooks.java:35)
+&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>
