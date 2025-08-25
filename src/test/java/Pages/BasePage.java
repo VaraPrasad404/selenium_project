@@ -20,6 +20,10 @@ public class BasePage {
     public void click(WebElement element) {
         wait.until(ExpectedConditions.elementToBeClickable(element)).click();
     }
+    
+    public void click(By locator) {
+    	wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
+    }
 
     public void type(WebElement element, String text) {
         wait.until(ExpectedConditions.visibilityOf(element)).sendKeys(text);

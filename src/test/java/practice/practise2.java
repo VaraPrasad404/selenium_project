@@ -17,40 +17,23 @@ public class practise2 {
 
 	public static void main(String args[]) {
 		
-		List<String> tableData = new ArrayList<>();
+		WebDriverManager.chromedriver().setup();
 		
-	WebDriverManager.chromedriver().setup();
-	WebDriver driver = new ChromeDriver();
-	
-	driver.get("https://www.w3schools.com/html/html_tables.asp");
-	
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-	
-	wait.until(ExpectedConditions.presenceOfElementLocated(
-            By.xpath("//table[@id='customers']/tbody/tr[1]/th")));
-	
-	/*List<WebElement> headers = driver.findElements(By.xpath("//table[@id='customers']/tbody/tr[1]/th"));
-	
-	for(WebElement header:headers) {
+		WebDriver driver = new ChromeDriver();
 		
-		System.out.println(header.getText());
-	}*/
-	
-	List<WebElement> data = driver.findElements(By.xpath("//table[@id='customers']/tbody/tr"));
-	
-	for(int i=1; i<data.size();i++) {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
-		List<WebElement> columns = data.get(i).findElements(By.xpath("td[position()>1]"));
+		driver.get("https://www.w3schools.com/html/html_tables.asp");
 		
-		for(WebElement col : columns) {
+		String header = driver.findElement(By.xpath("//table[@id='customers']/tbody/tr/th[1]")).getText();
+		
+		List<WebElement> values = driver.findElements(By.xpath("//table[@id='customers']/tbody/tr/td[1]"));
+		
+		for(WebElement value: values) {
 			
-			tableData.add(col.getText());
+			System.out.println(value.getText());
 		}
 		
-	}
-	
-	System.out.println(tableData);
-	
 	}
 	
 

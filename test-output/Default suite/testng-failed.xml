@@ -7,8 +7,8 @@
         <methods>
           <include name="flushExtentReport"/>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
           <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
         </methods>
       </class> <!-- runners.TestNGTestRunner -->
     </classes>

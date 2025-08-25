@@ -31,9 +31,9 @@ public class Practisemama {
 
     public static void main(String[] args) {
 
+    	WebDriverManager.chromedriver().setup();
 
 	WebDriver driver = new ChromeDriver();
-	WebDriverManager.chromedriver().setup();
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));

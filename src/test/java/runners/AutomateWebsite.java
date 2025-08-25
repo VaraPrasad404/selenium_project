@@ -1,6 +1,8 @@
 package runners;
 
 import org.junit.runner.RunWith;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -21,3 +23,5 @@ import io.cucumber.junit.CucumberOptions;
 public class AutomateWebsite {
 
 }
+
+

@@ -1,5 +1,6 @@
 package Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -34,6 +35,7 @@ public class ContactUs extends BasePage{
 	
 	
 	public void enter_email(String emailid) {
+		waitutils.waitforeletobevisible(driver, contactus_email);
 		contactus_email.sendKeys(emailid);
 	}
 	
@@ -60,6 +62,8 @@ public class ContactUs extends BasePage{
 	
 	public void click_ok_btn() {
 		waitutils.acceptalert(driver);
+		WebElement sel = driver.findElement(By.xpath(""));
+		
 	}
 	
 }

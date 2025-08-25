@@ -9,6 +9,7 @@ import utils.ExtentReportManager;
 @CucumberOptions(
     features = "src/test/java/automationExercise",
     glue = {"automationExercisesStepDefinitions","Hooks"},
+    tags = "@Json",
     			    plugin = {
     			        "pretty",
     			        "json:target/cucumber.json",      // for future Allure or advanced usage
@@ -19,7 +20,7 @@ import utils.ExtentReportManager;
 public class TestNGTestRunner extends AbstractTestNGCucumberTests {
     
     @Override
-    @DataProvider(parallel = false) // <---- Enables parallel execution
+    @DataProvider(parallel = true) // <---- Enables parallel execution
     public Object[][] scenarios() {
         return super.scenarios();
     }
